@@ -1,0 +1,134 @@
+body{
+    background: rgba(41, 199, 252, 0.5) ;
+
+    background-size: cover;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    font-family: cursive, sans-serif;
+}
+
+header{
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+h1{
+    font-weight: 120;
+    font-size: 200%;
+    color: rgb(6, 7, 95);
+}
+
+input,button{
+    border: none;
+    outline: none;
+    /* appearance: none; */
+    /* background: none; */
+}
+
+#new-task{
+    display: flex;
+    background-color: rgb(6, 7, 95);
+    border-radius: 0.5cm;
+    padding: 0.3cm;
+}
+
+#new-task-content{
+    flex: auto;
+    background: none;
+    font-size: 100%;
+    color: bisque;
+}
+#new-task-content::placeholder{
+    color: bisque;
+}
+
+#new-task-submit{
+    font-size: 120%;
+    font-weight: 400;
+    color: #4aee3b;
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    cursor: pointer;
+    transition: 0.4s; 
+}
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity: 0.65;
+}
+
+main{
+max-width: 800px;
+width: 100%;
+margin: 0 auto;
+}
+ /* padding: 20px; */
+
+
+h2{
+    font-weight: 700;
+    font-size: 150%;
+    color: rgb(6, 7, 95);
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(6, 7, 95);
+    border-radius: 0.5cm;
+    padding: 10px;
+    margin-top: 10px;
+}
+.task-content{
+    color: aquamarine;
+    background: none;
+    font-size: 110%;
+    width: 100%;
+}
+#task-delete{
+    color: red;
+    font-size: 100%;
+    font-weight: 600;
+    background-image: linear-gradient(to right,rgb(252, 7, 7),rgb(136, 4, 4));
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#task-delete:hover{
+    opacity: 0.8;
+}
+#task-delete:active{
+    opacity: 0.65;
+}
+#task-edit{
+    color: rgb(15, 243, 15);
+    /* color: #8d084b; */
+    
+    font-size: 100%;
+    font-weight: 600;
+    background:none;
+    background-image: linear-gradient(to right,rgb(15, 243, 15),rgb(3, 94, 3));
+    
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#task-edit:hover{
+    opacity: 0.8;
+}
+#task-edit:active{
+    opacity: 0.65;
+}
+
+
+
+.task-content:not(:read-only){
+    color: #f35ba7;
+}
